@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup and Login</title>
+    <link rel="stylesheet" href="CSS/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">
+            <h2>Sign Up</h2>
+            <form action="#" class="align">
+                <div class="container">
+                    <input id="email" type="email" class="regEmail inputstyle" placeholder="Email">
+                    <p class="emailErr alert">請輸入Email正確格式</p>
+                </div>
+                <div class="container">
+                    <input id="password" type="password" class="regPassword inputstyle" placeholder="Password">
+                    <p class="passwordErr alert">請輸入密碼長度為6~16字數<br>且包含大小寫英文及數字的密碼</p>
+                </div>
+                <input type="button" value="SIGNUP" class="signup btn inputstyle">
+            </form>
+        </div>
+        <div class="box">
+            <h2>Sign In</h2>
+            <form action="#" class="align">
+                <div class="container">
+                    <input id="email" type="email" class="logEmail space inputstyle" placeholder="Email">
+                </div>
+                <div class="container">
+                    <input id="password" type="password" class="logPassword space inputstyle" placeholder="Password">
+                </div>
+                <input type="button" value="SIGNIN" class="signin btn inputstyle">
+            </form>
+        </div>
+    </div>
+    <script src="JS/all.js"></script>
+</body>
+</html>

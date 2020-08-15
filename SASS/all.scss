@@ -1,0 +1,96 @@
+@import "css_reset";
+
+@mixin flex {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family   : "Microsoft JhengHei", sans-serif;
+    letter-spacing: 1px;
+}
+
+.wrap {
+    background: rgb(80, 124, 145);
+}
+
+.box {
+    margin: 0 auto;
+    width  : 300px;
+    padding: 20px;
+
+    h2 {
+        font-size    : 24px;
+        color        : #FFF;
+        text-align   : center;
+        margin-bottom: 20px;
+    }
+
+    .align {
+        width: 100%;
+        @include flex;
+        flex-direction: column;
+        .container{
+            width: 100%;
+            .alert{
+                visibility: hidden;
+                line-height: 1.2;
+                padding: 0 10px;
+                font-size: 14px;
+                font-weight: bold;
+                color: rgb(247, 114, 114);
+            }
+        }
+    }
+}
+
+.inputstyle {
+    width             : 100%;
+    padding           : 15px;
+    margin: 6px 0;
+    border-radius     : 15px;
+    background-color  : transparent;
+    border            : 1px solid #FFF;
+    outline           : none;
+    color             : #FFF;
+    box-shadow        : 1px 2px 0px #FFF;
+    -moz-appearance   : none;
+    -webkit-appearance: none;
+}
+
+::placeholder {
+    color: rgb(226, 224, 224);
+}
+
+.btn {
+    width: 60%;
+    letter-spacing  : 2px;
+    border          : none;
+    background-color: rgb(226, 177, 41);
+    box-shadow      : 1px 2px 0px rgb(143, 111, 23);
+    transition      : all 0.1s;
+
+    &:hover {
+        cursor   : pointer;
+        transform: scale(1.03);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+.space{
+    margin: 16px 0;
+}
+
+.signin{
+    margin-top: 20px;
+}
